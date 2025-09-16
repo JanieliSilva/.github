@@ -2,7 +2,7 @@ name: Generate Snake GIF
 
 on:
   schedule:
-    - cron: "0 */12 * * *" # Roda a cada 12 horas
+    - cron: "0 */12 * * *"
   workflow_dispatch:
 
 jobs:
@@ -15,7 +15,7 @@ jobs:
       - name: Generate Snake GIF
         uses: Platane/snk@v3
         with:
-          github_user_name: 'SEU_USERNAME' # Troque por seu nome de usuário
+          github_user_name: 'JanieliSilva' # Seu nome de usuário
           outputs: |
             dist/github-snake.svg
             dist/github-snake-dark.svg?palette=github-dark
